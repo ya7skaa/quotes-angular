@@ -14,7 +14,7 @@ export class FormComponent implements OnInit {
   words:any
 
   submitQuote(){
-    this.words= new Qoute("","","")
+    this.words= new Quote("","")
     this.emitQuote.emit(this.words)
   }
 
