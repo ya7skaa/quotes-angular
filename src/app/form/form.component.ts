@@ -7,6 +7,8 @@ import {Quote} from '../quote';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
+  quote = new Quote ("","","");
+
   @Output() emitQuote =new EventEmitter()
   quoteString: string
   quoteWriter:string
@@ -14,7 +16,7 @@ export class FormComponent implements OnInit {
   words:any
 
   submitQuote(){
-    this.words= new Quote("","")
+    this.words= new Quote("","","")
     this.emitQuote.emit(this.words)
   }
 

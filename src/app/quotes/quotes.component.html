@@ -23,8 +23,8 @@
     </ul>
   </div>
 </nav>
-<div class="theQuote" *ngFor="let quote of quotes;i=index">
-  <app-details[quote]="quote"></app-details>
+<div class="theQuote" *ngFor="let quote of quotes; let i=index">
+  <app-quote-details [quote]="quote"></app-quote-details>
   <button class="btn btn-info" (click)="upvote(i)">Upvote</button>
   <button class="btn btn-info" (click)="downvote(i)">Downvote</button>
   <button class="btn btn-danger" (click)="deleteQuote(i)">Delete</button>
