@@ -13,12 +13,12 @@ export class QuotesComponent implements OnInit {
     new Quote("Sumaya"," ","It does not matter how slowly you go as long as you do not stop",)
   ]
 addQuote(pickedQuote){
-  this.quotes.push(pickedQuote)
+  this.quotes.push(pickedQuote);
 }
 upvote(i){
   this.quotes[i].upvotes ++;
 }
-down.vote(i){
+downvote(i){
   this.quotes[i].downvotes ++;
 }
 deleteQuote(i){
