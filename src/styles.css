@@ -14,7 +14,23 @@ body{
 #nav-det{
   color: #87c0cd;
 }
+#navbarDropdownMenuLink{
+    color: #87c0cd;
+}
 .jumbotron{
+  border: 2px solid #113f67;
   margin-top: 40px;
+  background-color: #87c0cd;
+}
+#motto{
+  font-style: italic;
   text-align: center;
+  color:  #87c0cd;
+}
+#heading{
+  color: #113f67;
+  font-style: normal;
+  text-decoration: underline;
+  text-align:center;
+
 }

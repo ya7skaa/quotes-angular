@@ -6,26 +6,18 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a id="nav-det"class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
 
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Quotes</a>
-          <a class="dropdown-item" href="#">Form</a>
-
-        </div>
-      </li>
     </ul>
   </div>
 </nav>
+<div class="container">
 <div class="jumbotron">
-  <h1>QUOTES.</h1>
-  <p>FIND some of the most inspirational quotesby your favorite authors!</p>
+  <h1 id="heading">"QUOTES."</h1>
+  <p id="motto">Find some of the most inspirational quotes by your favorite authors!</p>
+</div>
 </div>
 
 
@@ -36,7 +28,9 @@
 <div class="theQuote" *ngFor="let quote of quotes; let i=index">
   <app-quote-details [quote]="quote"></app-quote-details>
   <button class="btn btn-info" (click)="upvote(i)">Upvote</button>
+
   <button class="btn btn-info" (click)="downvote(i)">Downvote</button>
+
   <button class="btn btn-danger" (click)="deleteQuote(i)">Delete</button>
   </div>
   </div>
