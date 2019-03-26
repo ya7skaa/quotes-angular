@@ -1,18 +1,18 @@
-<form (ngSubmit)= "submitQuotes()" >
+<form (ngSubmit)= "submitQuote()" >
   <div class="form-group">
     <label for="form1">Name</label>
-    <input type="text" class="form-control" id="form1"  name="name" [(ngModel)]="quote.writer" >
+    <input type="text" class="form-control" id="form1"  name="writer"  [(ngModel)]="quoteWriter" >
 
   </div>
   <div class="form-group">
 
     <label for="form2">Quote</label>
-    <input type="text" class="form-control" id="form1" name="quote" [(ngModel)]="quote.author">
+    <input type="text" class="form-control" id="form2" name="quote" [(ngModel)]="quoteQuote">
   </div>
   <div class="form-group">
 
-    <label for="form3">Quote</label>
-    <input type="text" class="form-control" id="form3" name="author" [(ngModel)]="quote.quote">
+    <label for="form3">Author</label>
+    <input type="text" class="form-control" id="form3" name="author"  [(ngModel)]="quoteAuthor">
   </div>
 
   <button type="submit" class="btn btn-primary">Post Quote!</button>

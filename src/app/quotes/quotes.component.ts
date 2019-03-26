@@ -8,9 +8,9 @@ import{Quote} from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quotes=[
-    new Quote("Yasmin", " ", "Our greatest glory is not in never falling",),
-    new Quote("Abdi.H", " ", "All our dreams can come true",),
-    new Quote("Sumaya"," ","It does not matter how slowly you go as long as you do not stop",)
+    new Quote("Yasmin", "M.L.K ", "Our greatest glory is not in never falling",),
+    new Quote("Abdi.H", "Justin Biggs ", "All our dreams can come true",),
+    new Quote("Sumaya","Oprah Winfrey ","It does not matter how slowly you go as long as you do not stop",)
   ]
 addQuote(pickedQuote){
   this.quotes.push(pickedQuote);
@@ -24,8 +24,7 @@ downvote(i){
 deleteQuote(i){
   this.quotes.splice(i,1);
 }
-
-  constructor() { }
+onstructor() { }
 
   ngOnInit() {
   }
