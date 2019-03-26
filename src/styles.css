@@ -34,3 +34,7 @@ body{
   text-align:center;
 
 }
+#col{
+  background-color: #87c0cd;
+  border:2px solid #113f67;
+}

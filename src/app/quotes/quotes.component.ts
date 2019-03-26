@@ -8,9 +8,9 @@ import{Quote} from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quotes=[
-    new Quote("Yasmin", "M.L.K ", "Our greatest glory is not in never falling",),
-    new Quote("Abdi.H", "Justin Biggs ", "All our dreams can come true",),
-    new Quote("Sumaya","Oprah Winfrey ","It does not matter how slowly you go as long as you do not stop",)
+    new Quote("Yasmin", "Our greatest glory is not in never falling","M.L.K "),
+    new Quote("Abdi.H", "All our dreams can come true","Justin Biggs "),
+    new Quote("Sumaya","It does not matter how slowly you go as long as you do not stop","Oprah Winfrey ",)
   ]
 addQuote(pickedQuote){
   this.quotes.push(pickedQuote);

@@ -10,15 +10,15 @@ export class FormComponent implements OnInit {
 
 
   @Output() emitQuote =new EventEmitter()
-  quoteString: string
   quoteWriter:string
+  quoteString: string
   quoteAuthor:string
   words:any
 
   submitQuote(){
-    this.words= new Quote(this.quoteString,this.quoteWriter,this.quoteAuthor)
-    this.quoteString=''
+    this.words= new Quote(this.quoteWriter,this.quoteString,this.quoteAuthor)
     this.quoteWriter=''
+    this.quoteString=''
     this.quoteAuthor=''
     this.emitQuote.emit(this.words)
   }
