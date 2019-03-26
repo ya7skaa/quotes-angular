@@ -1,45 +1,53 @@
-.well{
-
+.well {
   margin-left: 40px;
 }
-.container{
+
+.container {
   margin-top: 40px;
 }
-body{
-    background-color: #f3f9fb;
+
+body {
+  background-color: #f3f9fb;
 }
-#nav-bar{
+
+#nav-bar {
   background-color: #113f67;
 }
-#nav-det{
+
+#nav-det {
   color: #87c0cd;
 }
-#navbarDropdownMenuLink{
-    color: #87c0cd;
+
+#navbarDropdownMenuLink {
+  color: #87c0cd;
 }
-.jumbotron{
+
+.jumbotron {
   border: 2px solid #113f67;
   margin-top: 40px;
   background-color: #87c0cd;
 }
-#motto{
+
+#motto {
   font-style: italic;
   text-align: center;
-  color:  #87c0cd;
+  color: #87c0cd;
   font-family: 'Gochi Hand', cursive;
 }
-#heading{
+
+#heading {
   color: #113f67;
   font-style: normal;
   text-decoration: underline;
-  text-align:center;
+  text-align: center;
   font-family: 'Paytone One', sans-serif;
+}
 
-}
-#col{
+#col {
   background-color: #87c0cd;
-  border:2px solid #113f67;
+  border: 2px solid #113f67;
 }
-#change{
+
+#change {
   font-family: 'Caveat Brush', cursive;
 }

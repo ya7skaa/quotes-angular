@@ -3,7 +3,7 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a id="nav-det"class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a id="nav-det" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
 
 
@@ -12,32 +12,32 @@
   </div>
 </nav>
 <div class="container">
-<div class="jumbotron">
-  <h1 id="heading">QUOTES."</h1>
-  <p id="motto">Find some of the most inspirational quotes by your favorite authors!</p>
-</div>
+  <div class="jumbotron">
+    <h1 id="heading">QUOTES."</h1>
+    <p id="motto">Find some of the most inspirational quotes by your favorite authors!</p>
+  </div>
 </div>
 
 
 <div class="container">
   <div class="well">
-  <div class="row">
-    <div id="col" class="col-md-6">
-<div class="theQuote" *ngFor="let quote of quotes; let i=index">
+    <div class="row">
+      <div id="col" class="col-md-6">
+        <div class="theQuote" *ngFor="let quote of quotes; let i=index">
 
-  <h2 id="change">
-"{{quote.quote}}"
-  </h2>
-  <app-quote-details [quote]="quote"></app-quote-details>
-  <button  class="btn btn-info" (click)="upvote(i)">Upvote</button>
+          <h2 id="change">
+            "{{quote.quote}}"
+          </h2>
+          <app-quote-details [quote]="quote"></app-quote-details>
+          <button class="btn btn-info" (click)="upvote(i)">Upvote</button>
 
-  <button  class="btn btn-info" (click)="downvote(i)">Downvote</button>
+          <button class="btn btn-info" (click)="downvote(i)">Downvote</button>
 
-  <button  class="btn btn-danger" (click)="deleteQuote(i)">Delete</button>
-  </div>
-  </div>
-  <div  class="col-md-6">
-      <app-form (emitQuote)="addQuote($event)"></app-form>
-  </div>
-  </div>
+          <button class="btn btn-danger" (click)="deleteQuote(i)">Delete</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <app-form (emitQuote)="addQuote($event)"></app-form>
+      </div>
+    </div>
   </div>
