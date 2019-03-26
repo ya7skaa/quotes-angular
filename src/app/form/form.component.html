@@ -1,4 +1,7 @@
-<form (ngSubmit)= "submitQuotes()"class="well" >
+<div class="container">
+<div class="row">
+  <div class="col-md-6">
+<form (ngSubmit)= "submitQuotes()" >
   <div class="form-group">
     <label for="form1">Name</label>
     <input type="text" class="form-control" id="form1"  name="name" [(ngModel)]="quote.writer" >
@@ -18,3 +21,6 @@
   <button type="submit" class="btn btn-primary">Post Quote!</button>
 
 </form>
+</div>
+</div>
+</div>
