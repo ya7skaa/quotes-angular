@@ -25,7 +25,10 @@
       <div id="col" class="col-md-6">
         <div class="theQuote" *ngFor="let quote of quotes; let i=index">
 
-          <h2 id="change">
+          <h2 id="change"  appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0"> >
+            "{{quote.quote}}"
+          </h2>
+          <h2 id="change" *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">
             "{{quote.quote}}"
           </h2>
           <app-quote-details [quote]="quote"></app-quote-details>
