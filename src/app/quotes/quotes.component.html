@@ -18,29 +18,51 @@
   </div>
 </div>
 
+<div class="theQuote">
+  <div class="row">
+    <div class="col-md-4">
+
+    </div>
+
+
+<div class="container">
+<div class="row">
+<div *ngFor="let quote of quotes; let i=index" class="col-md-4">
+<div  id="card"class="card border-# mb-3" style="max-width: 18rem;">
+<div id="header" class="card-header bg-transparent border-info">QUOTES</div>
+<div class="card-body text-info">
+  
+  <h2 class="card-text"  appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">
+      "{{quote.quote}}"
+    </h2>
+    <h2 class="card-text" *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">
+      "{{quote.quote}}"
+    </h2>
+    <app-quote-details [quote]="quote"></app-quote-details>
+</div>
+<div class="card-footer bg-transparent border-info">  <button class="btn btn-info" (click)="upvote(i)">Upvote</button>
+
+  <button class="btn btn-info" (click)="downvote(i)">Downvote</button>
+
+  <button class="btn btn-danger" (click)="deleteQuote(i)">Delete</button></div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
 
 <div class="container">
   <div class="well">
     <div class="row">
-      <div id="col" class="col-md-6">
-        <div class="theQuote" *ngFor="let quote of quotes; let i=index">
-
-          <h2 id="change"  appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0"> >
-            "{{quote.quote}}"
-          </h2>
-          <h2 id="change" *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">
-            "{{quote.quote}}"
-          </h2>
-          <app-quote-details [quote]="quote"></app-quote-details>
-          <button class="btn btn-info" (click)="upvote(i)">Upvote</button>
-
-          <button class="btn btn-info" (click)="downvote(i)">Downvote</button>
-
-          <button class="btn btn-danger" (click)="deleteQuote(i)">Delete</button>
-        </div>
-      </div>
-      <div class="col-md-6">
+      <div class="col-md-12">
         <app-form (emitQuote)="addQuote($event)"></app-form>
       </div>
-    </div>
-  </div>
+      </div>
+      </div>
+      </div>
